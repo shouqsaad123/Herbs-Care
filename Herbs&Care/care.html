@@ -1,0 +1,341 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+.menu{
+position: relative;
+  overflow: hidden;
+  background-color: 	 #d0f0ec;
+}
+ 
+div.firstline {
+  text-align:left ;
+  color: black;
+  background-color: #fff;
+  margin-top:50px;
+  padding-top:10px;
+  padding-right:30px;
+  padding-left:20px;
+  padding-bottom:10px;
+}
+.menu .search-container {
+  float: right;
+}
+.menu input[type=text] {
+   padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 2px solid black;
+}
+.menu .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+}
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color:  	 #d0f0ec;
+  	
+
+}
+.boredHome{
+	 border-right: 3px solid black;
+	
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+   margin-left:150px;
+    color: black;
+ padding-right:150px;
+}
+
+.topnav a:hover {
+
+  color: white;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+padding-right:150px;
+}
+
+.topnav-right {
+   float: none;
+  position: absolute;
+  top: 50%;
+  right: -30%;
+  transform: translate(-50%, -50%);
+  padding-left:150px;
+
+}
+.column {
+  float: left;
+  width: 22%;
+  padding: 10px;
+    border:solid 1px;
+	margin:20px;
+  height: 100%; 
+   text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.img {
+    position: relative;
+    width:  100%;
+    height: 40%;
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding:5px;
+
+
+}
+
+/* Style the footer */
+footer {
+  background-color:  #d0f0ec;
+height:5%;
+  color: white;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+      table-layout: fixed;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+
+}
+
+
+</style>
+</head>
+<body>
+<div class="menu ">
+
+
+<div class="firstline ">
+ <h1> 
+ HERBOLOGY
+  <div class="search-container">
+    <form >
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+ </h1> 
+ 
+</div>
+
+<!-- Top navigation -->
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <a class ="boredHome" href="Herbs.html">Herbs</a>
+  </div>
+  
+  <!-- Left-aligned links (default) -->
+  
+   <a class ="boredHome" href="Home.html">  <i class="fa fa-home">Home</i></a>
+
+  
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a href="care.html">Care</a>
+  </div>
+  
+</div>
+</div>
+
+
+<div class="row">
+  <div class="column" style="background-color:#ffffff;">
+    <img class="img" src="https://livingthenourishedlife.com/wp-content/uploads/2013/04/4-Easy-Honey-Face-Mask-Recipes-for-Every-Skin-Type.png" alt="honymask" />
+
+<table style="width:100%">
+  <caption><h3 style="background: #d0f0ec;"> Honey Mask</h3></caption>
+  <tr>
+    <th onclick="openTab('b1');"> <h3>Ingredients</h3>	</th>
+     </tr>  
+  <tr>
+  <td>
+    <ul >
+	<div id="b1" class="containerTab" >
+  <li>1 teaspoon mashed avocado</li>
+  <li>1 teaspoon plain whole milk yogurt</li>
+  <li>1 teaspoon raw honey</li>
+   </div>
+   </ul>
+   </td>
+  </tr> 
+    <tr>
+    <td onclick="openTab('b2');this.style.backgroundColor = '#b3b3b3';">  <h3>Recipe:</h3></td></tr>
+   <tr>
+   <td>
+	  <div id="b2" class="containerTab" style="display:none;background: #ddd;">	
+	Mix ingredients in a small bowl until smooth. Spread the mixture over your face and let it sit for 20-30 minutes before washing it off.
+	</div>
+	</td>
+  </tr>
+</table>
+ </div>
+
+  
+  
+  <div class="column" style="background-color:#ffffff;">
+     <img class="img" src="https://media.allure.com/photos/5771b9cd8d432b9e20f92d83/master/w_636,h_424,c_limit/skin-care-2015-08-oatmeal-face-mask-recipe.jpg" alt="honymask" />
+
+<table style="width:100%">
+  <caption><h3 style="background: #d0f0ec;"> Oatmeal</h3></caption>
+  <tr>
+    <th onclick="openTab('b3');"> <h3>Ingredients</h3>	</th>
+     </tr>  
+  <tr>
+  <td>
+    <ul >
+	<div id="b3" class="containerTab" >
+  <li>1/2 cup cooked oatmeal, cooled </li>
+  <li>1 egg</li>
+  <li>1 tablespoon lemon juice</li>
+   </div>
+   </ul>
+   </td>
+  </tr> 
+    <tr>
+    <td onclick="openTab('b4');this.style.backgroundColor = '#b3b3b3';">  <h3>Recipe:</h3></td></tr>
+   <tr>
+   <td>
+	  <div id="b4" class="containerTab" style="display:none;background: #ddd;">	
+The acid in the lemon juice goes to work removing excess oil and dead skin cells (it's all those alpha hydroxy acids packed in there); meanwhile, the oatmeal soothes the skin and calms any patches of redness.
+	</div>
+	</td>
+  </tr>
+</table>
+ </div>
+
+  
+  <div class="column" style="background-color:#fff;">
+       <img class="img" src="http://beautymunsta.com/wp-content/uploads/2014/06/oneing.jpg" alt="honymask" />
+
+<table style="width:100%">
+  <caption><h3 style="background: #d0f0ec;">Banana Face Mask</h3></caption>
+  <tr>
+    <th onclick="openTab('b5');"> <h3>Ingredients</h3>	</th>
+     </tr>  
+  <tr>
+  <td>
+    <ul >
+	<div id="b5" class="containerTab">
+  <li>1/2 ripe banana</li>
+
+   </div>
+   </ul>
+   </td>
+  </tr> 
+    <tr>
+    <td onclick="openTab('b6');this.style.backgroundColor = '#b3b3b3';">  <h3>Recipe:</h3></td></tr>
+   <tr>
+   <td>
+	  <div id="b6" class="containerTab" style="display:none;background: #ddd;">	
+  Mashing banana to get a lump-free gloopy mask. slather the banana face mask onto your face in gentle circular motions. Let the mask for about 10 to 15 minutes. When the time is up, rinse off with warm water first, then cold water. Pat dry with a clean towel.
+  </div>
+	</td>
+  </tr>
+</table>
+ </div>
+
+  <div class="column" style="background-color:#fff;">
+       <img class="img" src="https://media.allure.com/photos/5771b9ce2554df47220a7c9d/1:1/w_800%2Cc_limit/skin-care-2015-08-squash-face-mask-recipe.jpg" alt="honymask" />
+
+<table style="width:100%">
+  <caption><h3 style="background: #d0f0ec;">Squash</h3></caption>
+  <tr>
+    <th onclick="openTab('b7');"> <h3>Ingredients</h3>	</th>
+     </tr>  
+  <tr>
+  <td>
+    <ul >
+	<div id="b7" class="containerTab" >
+  <li>1 butternut squash, pureed in a food processor</li>
+  <li>1 tablespoon honey</li>
+  <li>2 drops tea-tree oil</li>
+   </div>
+   </ul>
+   </td>
+  </tr> 
+    <tr>
+   <td onclick="openTab('b8');this.style.backgroundColor = '#b3b3b3';">  <h3>Recipe:</h3>	</td></tr>
+   <tr>
+   <td>
+	  <div id="b8" class="containerTab" style="display:none;background: #ddd;">	
+	  
+This mask packs a big anti-acne punch with the help of squash to boost collagen production, tea-tree oil to fight blemishes, and honey to brighten the skin. Apply it once a week for a glowing and more even complexion.
+	</div>
+	</td>
+  </tr>
+</table>
+ </div>
+  </div>
+
+
+
+<footer>
+   <div style="float: right;padding-top:7px">
+   <a style=" color: #777 ;padding-right:7px" href="https://ar-ar.facebook.com/" class="fa fa-facebook"></a>
+  <a style=" color: #777;padding-right:7px"href="https://twitter.com/login?lang=ar" class="fa fa-twitter"></a>
+  <a style=" color: #777;padding-right:7px" href="https://www.google.com.sa/" class="fa fa-google"></a>
+   <a style=" color: #777;padding-right:7px" href="https://www.instagram.com/" class="fa fa-instagram"></a>
+</div>
+  <p style="text-align:left;padding-top:7px;color:black;padding-left:7px">&#169; 2019 These Rights Reseved For Herpology</p>
+
+</footer>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+	   x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+   
+  
+
+}
+</script>
+
+
+</body>
+</html>
